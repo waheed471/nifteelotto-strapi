@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lottery_participants",
+  "info": {
+    "singularName": "lottery-participant",
+    "pluralName": "lottery-participants",
+    "displayName": "LotteryParticipants"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appliedDate": {
+      "type": "datetime"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "lottery": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lottery.lottery",
+      "inversedBy": "lottery_participants"
+    }
+  }
+}

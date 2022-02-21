@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lotteries",
+  "info": {
+    "singularName": "lottery",
+    "pluralName": "lotteries",
+    "displayName": "Lottery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "dateFrom": {
+      "type": "datetime"
+    },
+    "dateTo": {
+      "type": "datetime"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "winnerId": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "isCompleted": {
+      "type": "boolean"
+    },
+    "lottery_participants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lottery-participant.lottery-participant",
+      "mappedBy": "lottery"
+    }
+  }
+}

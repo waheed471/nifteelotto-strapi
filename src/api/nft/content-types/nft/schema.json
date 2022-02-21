@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nfts",
+  "info": {
+    "singularName": "nft",
+    "pluralName": "nfts",
+    "displayName": "Nft",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "string"
+    },
+    "ipnft": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "deadline": {
+      "type": "datetime"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
